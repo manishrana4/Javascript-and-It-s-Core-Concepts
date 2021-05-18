@@ -1,9 +1,9 @@
 // SCOPE
 
-var a = 1;
+var a = 1;//GLOBAL SCOPE
 
 function simpleFunction(){
-    var a=4;
+    var a=4;//LOCAL SCOPE
     console.log("Loacl Scope: a=",a);    
 }
 
@@ -12,10 +12,10 @@ simpleFunction();
 console.log("Global Scope: a=", a);
 
 function X(){
-    var a=100;
+    var a=100;//Local Scope
 
     function Y(){
-        var b= 20;
+        var b= 20; //Local Scope
         console.log("Scope inside Y function only, b:",b);
     }
 
