@@ -6,7 +6,7 @@ let a = {
 }
 let b = {
     name: "Harry",
-    age: 20,
+    rate: 20,
 }
 let c = {
     name: "Larry",
