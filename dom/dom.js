@@ -6,9 +6,13 @@ let count = 0;
 clickBtnPlus.addEventListener("click", () => {
     count++;
     output.innerHTML = count;
+    output.setAttribute("class", "clickedPlus");
 });
 
 clickBtnMinus.addEventListener("click", () => {
     count--;
     output.innerHTML = count;
+    output.setAttribute("class", "clickedMinus");
 });
+
+
