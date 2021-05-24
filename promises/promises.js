@@ -7,7 +7,7 @@ function getData() {
             return data;
         }
         );
-    console.log("data promise:", data)
+    console.log("console before response data available:", data)
 }
 
 getData();
@@ -23,4 +23,4 @@ async function getDataAsync() {
     console.log("response data promise async await", response);
 }
 
-getDataAsync();
+getDataAsync(); 
