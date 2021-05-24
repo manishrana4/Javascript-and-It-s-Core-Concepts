@@ -1,19 +1,17 @@
 // Spread operator
 
-
+// in arrays
 let a = ["a", "b", "c", "d"];
 
 let b = [...a];
 
-console.log("a,b:", a, b);
-
-
-
 b[0] = "x";
 
-console.log("a,b:", a, b);
+let c = [...a, "e", "f"]
 
+console.log("a,b,c :", a, b, c);
 
+// in objects
 let x = {
     name: "harry",
     age: "40"
@@ -26,23 +24,11 @@ let y = {
 
 let z = { ...x };
 
-
-console.log("x,z,", x, z);
-
-let u={...x,...y};
-
-console.log("u:",u)
+let u = { ...x, ...y };
 
 z.name = "Patrick";
 
-console.log("x,z,", x, z);
+console.log("x,z,u", x, z, u);
 
-let numbers = [1, 2, 3];
 
-function add(x, y, z) {
-    return x + y + z;
-}
 
-let sum = add(...numbers);
-
-console.log("sum:", sum);
