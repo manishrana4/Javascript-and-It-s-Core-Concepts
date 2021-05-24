@@ -19,4 +19,12 @@ function add(x, y, callback) {
 let z = add(3, 4, callbackFunction);
 console.log('the result is:', z);
 
-add(3,5, ()=>{console.log("End of the line !!!")})
+add(3, 5, () => { console.log("End of the line !!!") });
+
+
+document.querySelector("#clickBtn").addEventListener("click",()=>{
+    document.querySelector("#para").innerHTML="Hello there welcome to the club!"
+    callbackFunction();
+})
+
+
